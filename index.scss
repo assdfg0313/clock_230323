@@ -1,0 +1,44 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: lightblue;
+  color: #222222;
+
+  main {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // mixin 쓰기
+    div {
+      text-shadow: /* Green glow */ 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa,
+        0 0 102px #0fa, 0 0 151px #0fa;
+    }
+
+    .time1 {
+      font-size: 80px;
+    }
+    .time2 {
+      font-size: 80px;
+      opacity: 0.3;
+      transform: scaleY(-1);
+      transition: 1s;
+    }
+  }
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
