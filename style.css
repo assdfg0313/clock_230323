@@ -1,0 +1,180 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main .nftView, main .nft .nftHover a, main .search .searchForm .searchButton, main .newQuotes .newQuotesButton, main .quotes .quotesAddButton {
+  border: 0;
+  background-color: transparent;
+  border-radius: 16px;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main .search .searchForm .searchInput, main .newQuotes .newQuotesInput {
+  border: 0;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+main .search .searchForm .searchInput:focus, main .newQuotes .newQuotesInput:focus {
+  outline: 0;
+}
+
+main .search .searchTitle, main .quotes {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard";
+}
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+main .time {
+  font-size: 120px;
+}
+main .quotes {
+  position: relative;
+  font-size: 40px;
+  margin-top: 40px;
+}
+main .quotes .quotesAddButton {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: none;
+}
+main .quotes:hover .quotesAddButton {
+  display: inline-block;
+}
+main .newQuotes {
+  margin-top: 16px;
+  display: none;
+}
+main .newQuotes .newQuotesInput {
+  font-size: 32px;
+}
+main .newQuotes .newQuotesButton {
+  margin-left: 20px;
+  background-color: darkcyan;
+  color: white;
+}
+main .search {
+  margin: 60px 0;
+  font-size: 32px;
+}
+main .search .searchTitle {
+  display: flex;
+  align-items: center;
+}
+main .search .searchTitle .searchLogo {
+  width: 32px;
+  height: 32px;
+  animation: spin 20s linear infinite;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 9999px;
+}
+main .search .searchForm {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+main .search .searchForm .searchInput {
+  width: 100%;
+  font-size: 20px;
+}
+main .search .searchForm .searchButton {
+  background-color: aquamarine;
+  margin-left: 12px;
+  width: 25%;
+}
+main .searchResult {
+  display: none;
+  font-size: 20px;
+  color: black;
+  padding: 40px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+main .nft img {
+  width: 256px;
+  height: 256px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 256px;
+  height: 256px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .nft .nftHover a {
+  background-color: aliceblue;
+  color: black;
+}
+main .nft .nftHover .nftHoverClose {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  border: 0;
+  border-radius: 9999px;
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+main .nft:hover .nftHover {
+  display: flex;
+}
+main .nftView {
+  background-color: aliceblue;
+  color: black;
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
